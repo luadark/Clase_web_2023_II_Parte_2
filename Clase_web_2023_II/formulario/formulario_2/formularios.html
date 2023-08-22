@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{font-family: Arial; background-color: #999;box-sizing: border-box;}
+form ,h3{
+    background-color: white;
+    border-radius: 5px;
+    color: #1c6fbd;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    border-color: #999;
+    border: 0;
+}
+ .field{
+    padding: 20px;
+ }
+textarea,input{
+    border-radius: 3px;
+    border-color: #999;
+    padding: 5px;
+    
+ }
+ #b1,#b2{
+    background-color: #1c6fbd;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+
+ }
+ #b1:hover,#b2:hover{
+    background-color:rgb(17, 60, 116);
+   
+ }
+ .field:focus{
+    border-color: aqua;
+ }
+  button{
+    background-color: rgb(0, 89, 255);
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    margin:0 auto;
+    
+ }
+ button span{
+background-color: black;
+padding: 16px 24px;
+border-radius: 6px;
+transition: .3s;
+
+ }
+button:hover span{
+    background: none;
+}
+button:active {
+    transform: scale(0.11);
+}
+    </style>
+
+
+    <h3>Formulario</h3>
+
+  <form action="http://www.librosweb.es/maneja_formulario.php" method="post">
+    nombre :
+    <input type="text" name="nombre" value="" />
+
+    <br/>
+    <br>
+    apellido  :
+    <input type="text" name="apellido" value="" />
+    <br>
+    <br>
+    usuario  :
+    <input type="text" name="usuario" value="" />
+    <br>
+    <br>
+    edad :
+    <input size="1" type="text" name="edad" value="" /> de <label for="so"></label> 
+    <select id="so" name="so">
+      <option value="" selected="selected">- mes -</option>
+      <option value="enero">enero</option>
+      <option value="febrero">febrero</option>
+      <option value="marzo">marzo</option>
+      <option value="abril">abril</option>
+    </select>
+    de <input size="1" type="text" name="año" value="" />
+    <br>
+    <br>
+    Contraseña 
+<input type="password" name="contrasena" value="" />
+<br><br>
+Sexo <br/>
+<input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre <br>
+<input type="radio" name="sexo" value="mujer" /> Mujer
+<br><br>
+
+<label for="so">Municipio</label> <br/>
+<select id="so" name="so">
+  <option value="" selected="selected">- selecciona -</option>
+  <option value="riohacha">riohacha</option>
+  <option value="maicao">maicao</option>
+  <option value="villanueva">villanueva</option>
+  <option value="fonseca">fonseca</option>
+</select>
+<br>
+
+
+<br>
+Foto <br>
+<input type="file" name="adjunto" />
+
+
+
+
+  
+    <br><br>
+    idiomas <br/>
+<input name="estados_unidos" type="checkbox" value="usa"/> ingles <br>
+<input name="francia" type="checkbox" value="fran"/> frances<br>
+<input name="portugal" type="checkbox" value="rio"/> portugues<br>   
+<br>
+
+<label for="descripcion">perfill</label> <br/>
+<textarea id="descripcion" name="descripcion" cols="35" rows="5"></textarea>
+
+  
+  <br>
+  <input id="b1" type="button" name="guardar" value="Guardar Cambios" />
+  <input id="b2" type="reset" name="limpiar" value="Borrar datos del formulario" /><br><br>
+  <br>
+  <button>
+    <span>enviar</span>
+  </button>
+</form>
+
+<a class="Inicio" href="../../Pagina_web_2/index.html">Inicio</a>
+</body>
+</html>
